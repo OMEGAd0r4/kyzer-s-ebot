@@ -8,7 +8,7 @@ const bot = new commando.Client({
 //PLUGINS
 
 //BOT TOKEN
-bot.login(process.evn.token);
+bot.login(process.env.token);
 //BOT TOKEN
 
 //GETS THE BOT ONLINE
