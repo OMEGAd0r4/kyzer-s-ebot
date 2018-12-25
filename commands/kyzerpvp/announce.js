@@ -28,8 +28,9 @@ class announceCommand extends commando.Command {
 
     var announcementmessageembed = new Discord.RichEmbed()
     .setTitle("**LOLICOP | Announcement**")
-    .setColor("#FFDF00")
+    .setColor("#000000")
     .addField("**__Announcement__**", `${announcementmessage}`)
+    .addField("TO FINISH DIS OF", "I AM BLACK \n blacker than a charcoal faxxxx")
     .setTimestamp()
   }
 }
