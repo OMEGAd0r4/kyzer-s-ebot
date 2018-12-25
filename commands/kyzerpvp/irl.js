@@ -18,12 +18,13 @@ class irlCommand extends commando.Command {
 
   async run(message)
   {
-      var irls = ["https://cdn.discordapp.com/attachments/525200110049689600/526677259231297546/tlzf7otr80911.png", "https://cdn.discordapp.com/attachments/525200110049689600/526677177928777739/Z.png"]
+      var irls = ["https://cdn.discordapp.com/attachments/525200110049689600/526677259231297546/tlzf7otr80911.png", "https://cdn.discordapp.com/attachments/525200110049689600/526677177928777739/Z.png"];
 
       message.channel.send({embed: new Discord.RichEmbed()
         .setTitle("**Lolicop's IRL**")
         .setColor("#000000")
-        .addField(irls[Math.floor(Math.random() * irls.length)])})
+        .addField("Kyzer is obviously black", "->")
+        .setImage(irls[Math.floor(Math.random() * irls.length)])})
   }
 }
 
