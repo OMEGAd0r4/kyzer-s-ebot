@@ -27,7 +27,7 @@ class announceCommand extends commando.Command {
     if (!message.member.roles.has(supportteamrole.id)) return message.channel.send("TAKE L U IS NO $$$ MEMBER HAAHAHA ")
 
     var announcementmessageembed = new Discord.RichEmbed()
-    .setTitle("**LOLICOP | Announcement**")
+    .setTitle("**Kyzer | Announcement**")
     .setColor("#000000")
     .addField("**__Announcement__**", `${announcementmessage}`)
     .setImage("https://cdn.discordapp.com/attachments/525200110049689600/527019638190505995/large.png")
