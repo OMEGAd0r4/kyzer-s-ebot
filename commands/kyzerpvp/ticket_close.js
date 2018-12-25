@@ -9,16 +9,16 @@ class closeCommand extends commando.Command {
     constructor(client) 
     {
       super(client, {
-        name: 'close', 
+        name: 'pmclose', 
         group: 'kyzerpvp',
-        memberName: 'close',
-        description: "killed kyzer. GOOD JOB"
+        memberName: 'pmclose',
+        description: "Close the dm channel with kyzah"
       });
     }
 
     async run(message, args)
     {
-    message.channel.send(`Are you sure you 28 potted kyzer? Once confirmed, you cannot reverse this action!\nTo confirm, type \`>confirm\`. This will time out in 10 seconds and be cancelled.`)
+    message.channel.send(`Are you sure you want to close the pm channel? Once confirmed, you cannot reverse this action!\nTo confirm, type \`>confirm\`. This will time out in 10 seconds and be cancelled.`)
     .then((m) => {
       message.channel.awaitMessages(response => response.content === '>confirm', {
         max: 1,
@@ -29,7 +29,8 @@ class closeCommand extends commando.Command {
           message.channel.delete();
         })
         .catch(() => {
-          m.edit('Kyzer injected vape and now t-baging on ur dead nan').then(m2 => {
+          m.edit("Time's up, your request has been canceled").then(m2 => {
+              m2.delete();
           }, 3000);
         });
     });
