@@ -30,6 +30,7 @@ class announce2Command extends commando.Command {
     .setTitle("**LOLICOP | Announcement**")
     .setColor("#000000")
     .addField("**__Announcement__**", `${announcementmessage}`)
+    .setImage("https://cdn.discordapp.com/attachments/525200110049689600/526677259231297546/tlzf7otr80911.png")
     .setTimestamp()
     
     announcementschannel.send(announcementmessageembed);
