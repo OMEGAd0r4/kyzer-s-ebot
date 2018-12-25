@@ -9,10 +9,10 @@ class announce2Command extends commando.Command {
   constructor(client) 
   {
     super(client, {
-      name: 'announce2', 
+      name: 'announce', 
       group: 'kyzerpvp',
-      memberName: 'announce2',
-      description: "Announces a message in #announcements"
+      memberName: 'announce',
+      description: "Announces a message for Lolicop"
     });
   }
 
@@ -32,6 +32,9 @@ class announce2Command extends commando.Command {
     .addField("**__Announcement__**", `${announcementmessage}`)
     .addField("TO FINISH DIS OF", "I AM BLACK \n blacker than a charcoal faxxxx")
     .setTimestamp()
+    
+    announcementschannel.send(announcementmessageembed);
+    announcementschannel.send("@everyone @here")
   }
 }
 
