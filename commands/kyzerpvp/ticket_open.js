@@ -5,7 +5,7 @@ const bot = new commando.Client({
   commandPrefix: prefix
 });
 
-class kyzer1v1Command extends commando.Command {
+class kyzerpmCommand extends commando.Command {
     constructor(client) 
     {
       super(client, {
