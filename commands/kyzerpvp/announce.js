@@ -30,7 +30,6 @@ class announce2Command extends commando.Command {
     .setTitle("**LOLICOP | Announcement**")
     .setColor("#000000")
     .addField("**__Announcement__**", `${announcementmessage}`)
-    .addField("TO FINISH DIS OF", "I AM BLACK \n blacker than a charcoal faxxxx")
     .setTimestamp()
     
     announcementschannel.send(announcementmessageembed);
