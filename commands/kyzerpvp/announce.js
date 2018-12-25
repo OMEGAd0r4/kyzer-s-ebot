@@ -26,6 +26,8 @@ class announceCommand extends commando.Command {
     var supportteamrole = message.guild.roles.find(`name`, "Admin");
     if (!message.member.roles.has(supportteamrole.id)) return message.channel.send("No admin no announcement. Stupid fak")
 
+    if (!announcementmessage) return message.channel.send("Dumb fak. WHERE IS DA MESSAGE LAH R U DUMB?")
+
     var announcementmessageembed = new Discord.RichEmbed()
     .setTitle("**Lolicop | Announcement**")
     .setColor("#FFDF00")
