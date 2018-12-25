@@ -43,5 +43,5 @@ class kyzer1v1Command extends commando.Command {
         }
 }
 
-module.exports = ticketCommand;
+module.exports = kyzer1v1Command;
 
