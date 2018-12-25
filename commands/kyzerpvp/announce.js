@@ -5,13 +5,13 @@ const bot = new commando.Client({
   commandPrefix: prefix
 });
 
-class announceCommand extends commando.Command {
+class announce2Command extends commando.Command {
   constructor(client) 
   {
     super(client, {
-      name: 'announce', 
+      name: 'announce2', 
       group: 'kyzerpvp',
-      memberName: 'announce',
+      memberName: 'announce2',
       description: "Announces a message in #announcements"
     });
   }
@@ -35,4 +35,4 @@ class announceCommand extends commando.Command {
   }
 }
 
-module.exports = announceCommand;
+module.exports = announce2Command;
