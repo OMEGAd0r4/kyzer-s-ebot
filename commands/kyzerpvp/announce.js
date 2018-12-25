@@ -10,7 +10,7 @@ class announceCommand extends commando.Command {
   {
     super(client, {
       name: 'announce', 
-      group: 'kyzerpvp',
+      group: 'voltpvp',
       memberName: 'announce',
       description: "Announces a message in #announcements"
     });
@@ -23,17 +23,14 @@ class announceCommand extends commando.Command {
 
     let announcementschannel = message.guild.channels.find(`name`, "announcements");
     if(!announcementschannel) return message.channel.send("Couldn't find the announcements channel");
-    var supportteamrole = message.guild.roles.find(`name`, "Admin");
-    if (!message.member.roles.has(supportteamrole.id)) return message.channel.send("No admin no announcement. Stupid fak")
-
-    if (!announcementmessage) return message.channel.send("Dumb fak. WHERE IS DA MESSAGE LAH R U DUMB?")
+    var supportteamrole = message.guild.roles.find(`name`, "$$$");
+    if (!message.member.roles.has(supportteamrole.id)) return message.channel.send("TAKE L U IS NO $$$ MEMBER HAAHAHA ")
 
     var announcementmessageembed = new Discord.RichEmbed()
-    .setTitle("**Lolicop | Announcement**")
+    .setTitle("**LOLICOP | Announcement**")
     .setColor("#FFDF00")
     .addField("**__Announcement__**", `${announcementmessage}`)
     .setTimestamp()
-
   }
 }
 
