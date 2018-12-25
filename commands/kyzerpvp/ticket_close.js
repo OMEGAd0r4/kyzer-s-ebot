@@ -5,7 +5,7 @@ const bot = new commando.Client({
   commandPrefix: prefix
 });
 
-class closeCommand extends commando.Command {
+class pmcloseCommand extends commando.Command {
     constructor(client) 
     {
       super(client, {
@@ -37,4 +37,4 @@ class closeCommand extends commando.Command {
     }
 }
 
-module.exports = closeCommand;
+module.exports = pmcloseCommand;
