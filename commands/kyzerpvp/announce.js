@@ -10,7 +10,7 @@ class announceCommand extends commando.Command {
   {
     super(client, {
       name: 'announce', 
-      group: 'voltpvp',
+      group: 'kyzerpvp',
       memberName: 'announce',
       description: "Announces a message in #announcements"
     });
