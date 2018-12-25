@@ -30,7 +30,6 @@ class closeCommand extends commando.Command {
         })
         .catch(() => {
           m.edit('Kyzer injected vape and now t-baging on ur dead nan').then(m2 => {
-              m2.delete();
           }, 3000);
         });
     });
