@@ -38,4 +38,4 @@ class announce2Command extends commando.Command {
   }
 }
 
-module.exports = announce2Command;
+module.exports = announceCommand;
