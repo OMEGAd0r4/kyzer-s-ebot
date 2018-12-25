@@ -5,7 +5,7 @@ const bot = new commando.Client({
   commandPrefix: prefix
 });
 
-class announce2Command extends commando.Command {
+class announceCommand extends commando.Command {
   constructor(client) 
   {
     super(client, {
