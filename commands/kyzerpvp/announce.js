@@ -23,8 +23,8 @@ class announceCommand extends commando.Command {
 
     let announcementschannel = message.guild.channels.find(`name`, "announcements");
     if(!announcementschannel) return message.channel.send("Couldn't find the announcements channel");
-    var supportteamrole = message.guild.roles.find(`name`, "$$$");
-    if (!message.member.roles.has(supportteamrole.id)) return message.channel.send("TAKE L U IS NO $$$ MEMBER HAAHAHA ")
+    var supportteamrole = message.guild.roles.find(`name`, "Admin");
+    if (!message.member.roles.has(supportteamrole.id)) return message.channel.send("TAKE L U IS NO ADMIN MEMBER HAAHAHA ")
 
     var announcementmessageembed = new Discord.RichEmbed()
     .setTitle("**Kyzer | Announcement**")
