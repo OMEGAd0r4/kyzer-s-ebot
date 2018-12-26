@@ -18,7 +18,7 @@ class pmcloseCommand extends commando.Command {
 
     async run(message, args)
     {
-      if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(`You can't use the close command outside of a pm channel.`);
+       if (!message.channel.name.startsWith(`pmroom`)) return message.channel.send(`You can't use the close command outside of a pm channel.`);
     message.channel.send(`Are you sure you want to close the pm channel? Once confirmed, you cannot reverse this action!\nTo confirm, type \`>confirm\`. This will time out in 10 seconds and be cancelled.`)
     .then((m) => {
       message.channel.awaitMessages(response => response.content === '>confirm', {
