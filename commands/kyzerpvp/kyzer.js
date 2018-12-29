@@ -36,7 +36,7 @@ class kyzerCommand extends commando.Command {
             .addField("Youtube (hvh)", "https://www.youtube.com/channel/UC-8DBtg7_AaVUSxBbsQbREA")
             .addField("Playlist (youtube)", "private")
             .addField("Playlist (soundcloud)", "private")
-            .addField("Pornhub", "LolicopPlayz")
+            .addField("Pornhub", "ItzLolicopzPlayz")
             .setTimestamp()})
     }
 }
